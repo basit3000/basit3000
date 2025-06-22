@@ -43,7 +43,7 @@ Automates a full Django server environment:
 
 I’m down for open-source collabs, backend gigs, or just sharing automation stories:
 - 📬 Email: basit3000@gmail.com or basit3000@yahoo.com  
-- 🔗 LinkedIn: [LinkedIn Profile](https://www.linkedin.com/in/muhammad-basit-zaheer/)
+- 🔗 LinkedIn: [muhammad-basit-zaheer](https://www.linkedin.com/in/muhammad-basit-zaheer/)
 
 ---
 
