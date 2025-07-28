@@ -42,7 +42,7 @@ Automates a full Django server environment:
 ## 🤝 Want to Collaborate?
 
 I’m down for open-source collabs, backend gigs, or just sharing automation stories:
-- 📬 Email: basit3000@gmail.com or basit3000@yahoo.com  
+- 📬 Email: basitzaheer02@gmail.com or basit3000@yahoo.com  
 - 🔗 LinkedIn: [muhammad-basit-zaheer](https://www.linkedin.com/in/muhammad-basit-zaheer/)
 
 ---
