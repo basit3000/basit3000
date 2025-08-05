@@ -1,6 +1,6 @@
 # 👋 Hi there, I'm Basit!
 
-I’m a Python-loving backend developer who’s always automating something to make life easier 😄
+I’m a backend dev who loves Python and automating anything that feels repetitive.
 
 - 🐍 **Expertise & Interests**: Python scripting, backend architecture, Automation  
 - ⚙️ **What I build**: Robust APIs, deployment tools, and server setups  
@@ -17,7 +17,7 @@ Automates a full Django server environment:
 - Boots the Django development server with one command  
 [Check it out!](https://github.com/basit3000/Django-Setup-Script) 
 
-👉 Ideal for devs who just want to hit "go" on Django without the setup headaches.
+Perfect if you want to skip the setup and start coding.
 
 ---
 
@@ -25,8 +25,8 @@ Automates a full Django server environment:
 
 | Project | Description |
 |--------|-------------|
-| **Backend APIs & Automation** | I'm always experimenting—scripts to merge PDFs, automate Google Sheets tasks, spin up environments, and build quick backend tools. |
-| **Coming Soon** | More Django and Python libraries |
+| **Backend APIs & Automation** | I write quick scripts and tools—like PDF mergers, Google Sheets automations, and backend utilities. |
+| **Coming Soon** | More Django tools and Python libraries on the way |
 
 ---
 
@@ -41,11 +41,17 @@ Automates a full Django server environment:
 
 ## 🤝 Want to Collaborate?
 
-I’m down for open-source collabs, backend gigs, or just sharing automation stories:
-- 📬 Email: basitzaheer02@gmail.com or basit3000@yahoo.com  
-- 🔗 LinkedIn: [muhammad-basit-zaheer](https://www.linkedin.com/in/muhammad-basit-zaheer/)
+Open to:
+- Backend dev work
+- Open-source projects
+- Automation ideas
+- Much more!
+
+📬 Reach out:  
+- Email: basitzaheer02@gmail.com or basit3000@yahoo.com  
+- LinkedIn: [muhammad-basit-zaheer](https://www.linkedin.com/in/muhammad-basit-zaheer/)
 
 ---
 
 
-Thanks for stopping by! 😊
+Thanks for dropping by! 😊
