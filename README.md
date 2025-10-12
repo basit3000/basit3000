@@ -1,10 +1,10 @@
 # 👋 Hi there, I'm Basit!
 
-I’m a backend dev who loves Python and automating anything that feels repetitive.
+I’m a backend dev who loves to code using Python and automating stuff that feel repetitive.
 
-- 🐍 **Expertise & Interests**: Python scripting, backend architecture, Automation  
-- ⚙️ **What I build**: Robust APIs, deployment tools, and server setups  
-- 📫 **Want to chat?** Shoot me an email or connect on LinkedIn!
+- 🐍 **Expertise**: Python, backend architecture, automation and much more!  
+- ⚙️ **What I build**: Robust APIs, deployment tools, scripting stuff and server setups  
+- 📫 **Want to connect?** Shoot me an email or connect with me on LinkedIn!
 
 ---
 
@@ -17,7 +17,7 @@ Automates a full Django server environment:
 - Boots the Django development server with one command  
 [Check it out!](https://github.com/basit3000/Django-Setup-Script) 
 
-Perfect if you want to skip the setup and start coding.
+Perfect if you want to skip the setup for Django and start coding.
 
 ---
 
@@ -33,9 +33,9 @@ Perfect if you want to skip the setup and start coding.
 ## 📚 Skills & Tools
 
 - **Languages**: Python, Java, C
-- **Frameworks**: Django, Flask, FastAPI 
-- **DevOps**: Virtualenv, shell scripting, deployment automation  
-- **Misc**: Git, RESTful APIs, CI/CD basics  
+- **Frameworks**: Django, Flask, FastAPI
+- **DevOps**: Virtualenv, shell scripting, deployment automation, Docker, Vercel
+- **Misc**: Git, RESTful APIs, CI/CD basics, ArgoCD
 
 ---
 
