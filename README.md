@@ -1,57 +1,27 @@
-# 👋 Hi there, I'm Basit!
+﻿# Hey, I'm Basit
 
-I’m a backend dev who loves to code using Python and automating stuff that feel repetitive.
+Backend developer, mostly Python. I like building things that solve actual problems -- APIs, automation scripts, tools that save me (or someone else) time. If something feels repetitive, I'll probably write a script for it.
 
-- 🐍 **Expertise**: Python, backend architecture, automation and much more!  
-- ⚙️ **What I build**: Robust APIs, deployment tools, scripting stuff and server setups  
-- 📫 **Want to connect?** Shoot me an email or connect with me on LinkedIn!
+## What I work with
 
----
+- **Languages:** Python, JavaScript, Java, C, a bit of PHP and Assembly from the old days
+- **Frameworks:** Django, FastAPI, Flask
+- **Other stuff:** Docker, Vercel, CI/CD (ArgoCD), shell scripting, Google Sheets API, Notion API
+- **Databases & APIs:** RESTful APIs, third-party integrations, web scraping
 
-## 🚀 Featured Projects
+## What I usually build
 
-### 🎉 Django Setup Script  
-Automates a full Django server environment:
-- Sets up a clean Python virtualenv
-- Upgrades `pip` and installs requirements
-- Boots the Django development server with one command  
-[Check it out!](https://github.com/basit3000/Django-Setup-Script) 
+- Backend services, APIs and some frontend development
+- Automation tools and scripts -- deployment, data pipelines, IP management, you name it
+- Web apps (mostly Django, some full-stack)
+- Integrations between services (pulling data from one API and pushing it somewhere useful)
+- The occasional data analysis or tracking tool when I want to understand something better
 
-Perfect if you want to skip the setup for Django and start coding.
+## Currently
 
----
+Building my portfolio site and tinkering with LLM-related stuff. Always looking for interesting backend or automation problems to solve.
 
-## 🛠 More Cool Stuff
+## Get in touch
 
-| Project | Description |
-|--------|-------------|
-| **Backend APIs & Automation** | I write quick scripts and tools—like PDF mergers, Google Sheets automations, and backend utilities. |
-| **Coming Soon** | More Django tools and Python libraries on the way |
-
----
-
-## 📚 Skills & Tools
-
-- **Languages**: Python, Java, C
-- **Frameworks**: Django, Flask, FastAPI
-- **DevOps**: Virtualenv, shell scripting, deployment automation, Docker, Vercel
-- **Misc**: Git, RESTful APIs, CI/CD basics, ArgoCD
-
----
-
-## 🤝 Want to Collaborate?
-
-Open to:
-- Backend dev work
-- Open-source projects
-- Automation ideas
-- Much more!
-
-📬 Reach out:  
-- Email: basitzaheer02@gmail.com or basit3000@yahoo.com  
-- LinkedIn: [muhammad-basit-zaheer](https://www.linkedin.com/in/muhammad-basit-zaheer/)
-
----
-
-
-Thanks for dropping by! 😊
+- **Email:** basitzaheer02@gmail.com / basit3000@yahoo.com
+- **LinkedIn:** [muhammad-basit-zaheer](https://www.linkedin.com/in/muhammad-basit-zaheer/)
