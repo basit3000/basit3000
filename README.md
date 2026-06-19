@@ -24,6 +24,22 @@ Trackers and small web apps for the boring problems that deserve a proper backen
 **Media & consumption tooling**  
 When official apps fall short — better shuffle logic, syncing watchlists to Notion, tracking things I actually care about. Anime lists, films, music; if there's an API and the UX annoys me, I'll probably build something.
 
+## Side quests
+
+Personal repos — the kind you start because the official app or workflow wasn't good enough.
+
+<div align="center">
+
+[![mal-to-notion](https://github-readme-stats.vercel.app/api/pin/?username=basit3000&repo=mal-to-notion&theme=transparent&hide_border=true&title_color=58a6ff&icon_color=C084FC&text_color=c9d1d9&description_lines=2)](https://github.com/basit3000/mal-to-notion)
+[![Spotify-True-Random](https://github-readme-stats.vercel.app/api/pin/?username=basit3000&repo=Spotify-True-Random&theme=transparent&hide_border=true&title_color=58a6ff&icon_color=1DB954&text_color=c9d1d9&description_lines=2)](https://github.com/basit3000/Spotify-True-Random)
+
+[![Django-Setup-Script](https://github-readme-stats.vercel.app/api/pin/?username=basit3000&repo=Django-Setup-Script&theme=transparent&hide_border=true&title_color=58a6ff&icon_color=3776AB&text_color=c9d1d9&description_lines=2)](https://github.com/basit3000/Django-Setup-Script)
+[![Diet-Analysis](https://github-readme-stats.vercel.app/api/pin/?username=basit3000&repo=Diet-Analysis&theme=transparent&hide_border=true&title_color=58a6ff&icon_color=F97316&text_color=c9d1d9&description_lines=2)](https://github.com/basit3000/Diet-Analysis)
+
+*anime → Notion · shuffle that lies less · one-command Django · diet data in Sheets*
+
+</div>
+
 ## Stack
 
 Python · Django · FastAPI · Flask · Docker · REST APIs · Google Sheets API · Notion API · Kotlin · Shell · Vercel · ArgoCD
@@ -51,21 +67,27 @@ Usually in an RPG, catching up on anime, or arguing that Spotify shuffle isn't a
 
 ![Profile views](https://komarev.com/ghpvc/?username=basit3000&label=Profile%20views&color=58a6ff&style=flat)
 
-<a href="https://open.spotify.com/user/ic9zxmbzknyeuiza6yh988k8n">
-  <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=ic9zxmbzknyeuiza6yh988k8n&cover_image=true&theme=default&show_offline=false&background_color=121212&interchange=false&profanity=false&hide_remaster=false" alt="Spotify Now Playing" />
-</a>
+![Backend](https://img.shields.io/badge/Focus-Backend-21262d?style=for-the-badge)
+![Automation](https://img.shields.io/badge/Focus-Automation-21262d?style=for-the-badge)
+![API Integrations](https://img.shields.io/badge/Focus-API%20Integrations-21262d?style=for-the-badge)
+![Python](https://img.shields.io/badge/Stack-Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 
-[![WakaTime](https://github-readme-stats.vercel.app/api/wakatime?username=basit3000&theme=transparent&hide_border=true&layout=compact)](https://wakatime.com/@basit3000)
+<img src="https://spotify-github-profile.kittinanx.com/api/view?uid=ic9zxmbzknyeuiza6yh988k8n&cover_image=true&theme=default&show_offline=false&background_color=121212&interchange=false&profanity=false&hide_remaster=false" alt="Spotify Now Playing" />
+
+<img src="https://raw.githubusercontent.com/basit3000/basit3000/main/assets/steam-now-playing.png" alt="Steam Now Playing" />
+
+[![Stats](https://github-profile-summary-cards.vercel.app/api/cards/stats?username=basit3000&theme=transparent)](https://github.com/basit3000)
+
+![Open to](https://img.shields.io/badge/Open%20to-Backend%20%7C%20Automation%20%7C%20Integrations-58a6ff?style=for-the-badge)
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/muhammad-basit-zaheer/)
+[![Email](https://img.shields.io/badge/Email-Say%20hi-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:basitzaheer02@gmail.com)
 
 [![GitHub Streak](https://streak-stats.demolab.com/?user=basit3000&theme=transparent&hide_border=true)](https://git.io/streak-stats)
 
-<a href="https://github.com/basit3000">
-  <img alt="3D contribution chart" src="./profile-3d-contrib/profile-green-animate.svg" />
-</a>
-
-[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=basit3000&theme=react&hide_border=true&area=true)](https://github.com/basit3000)
-
-[![Trophy](https://github-profile-trophy.vercel.app/?username=basit3000&theme=onedark&no-frame=true&column=4&margin-w=15&margin-h=15)](https://github.com/ashutosh00710/github-profile-trophy)
+![Followers](https://img.shields.io/github/followers/basit3000?style=for-the-badge&logo=github&label=Followers&color=21262d)
+![Stars](https://img.shields.io/github/stars/basit3000?style=for-the-badge&logo=github&label=Stars&color=21262d)
+![Repos](https://img.shields.io/badge/dynamic/json?url=https://api.github.com/users/basit3000&query=%24.public_repos&label=Repos&style=for-the-badge&logo=github&color=21262d)
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://github.com/basit3000/basit3000/raw/output/github-contribution-grid-snake-dark.svg">
