@@ -34,8 +34,43 @@ Python · Django · FastAPI · Flask · Docker · REST APIs · Google Sheets API
 - Tinkering with LLM-related stuff
 - Branching into Kotlin for a personal Spotify tool on the side
 - Always up for interesting backend or automation problems
+- **Todo:** anime "currently watching" widget via Jikan/MAL API
 
 ## Get in touch
 
 - **Email:** [basitzaheer02@gmail.com](mailto:basitzaheer02@gmail.com)
 - **LinkedIn:** [muhammad-basit-zaheer](https://www.linkedin.com/in/muhammad-basit-zaheer/)
+
+---
+
+## Off the clock
+
+Usually in an RPG, catching up on anime, or arguing that Spotify shuffle isn't actually random — which is how side projects get started.
+
+<div align="center">
+
+![Profile views](https://komarev.com/ghpvc/?username=basit3000&label=Profile%20views&color=58a6ff&style=flat)
+
+<a href="https://open.spotify.com/user/ic9zxmbzknyeuiza6yh988k8n">
+  <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=ic9zxmbzknyeuiza6yh988k8n&cover_image=true&theme=default&show_offline=false&background_color=121212&interchange=false&profanity=false&hide_remaster=false" alt="Spotify Now Playing" />
+</a>
+
+[![WakaTime](https://github-readme-stats.vercel.app/api/wakatime?username=basit3000&theme=transparent&hide_border=true&layout=compact)](https://wakatime.com/@basit3000)
+
+[![GitHub Streak](https://streak-stats.demolab.com/?user=basit3000&theme=transparent&hide_border=true)](https://git.io/streak-stats)
+
+<a href="https://github.com/basit3000">
+  <img alt="3D contribution chart" src="https://raw.githubusercontent.com/basit3000/basit3000/output-3d-contrib/profile-green-animate.svg" />
+</a>
+
+[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=basit3000&theme=react&hide_border=true&area=true)](https://github.com/basit3000)
+
+[![Trophy](https://github-profile-trophy.vercel.app/?username=basit3000&theme=onedark&no-frame=true&column=4&margin-w=15&margin-h=15)](https://github.com/ashutosh00710/github-profile-trophy)
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/basit3000/basit3000/output/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/basit3000/basit3000/output/github-contribution-grid-snake.svg">
+  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/basit3000/basit3000/output/github-contribution-grid-snake.svg">
+</picture>
+
+</div>
