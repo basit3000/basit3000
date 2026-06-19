@@ -72,9 +72,27 @@ Usually in an RPG, catching up on anime, or arguing that Spotify shuffle isn't a
 ![API Integrations](https://img.shields.io/badge/Focus-API%20Integrations-21262d?style=for-the-badge)
 ![Python](https://img.shields.io/badge/Stack-Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 
-<img src="https://spotify-github-profile.kittinanx.com/api/view?uid=ic9zxmbzknyeuiza6yh988k8n&cover_image=true&theme=default&show_offline=false&background_color=121212&interchange=false&profanity=false&hide_remaster=false" alt="Spotify Now Playing" />
+<h3>Now playing</h3>
 
-<img src="https://raw.githubusercontent.com/basit3000/basit3000/main/assets/steam-now-playing.png" alt="Steam Now Playing" />
+<table align="center">
+  <tr>
+    <td align="center" width="340">
+      <img
+        src="https://spotify-github-profile.kittinanx.com/api/view?uid=ic9zxmbzknyeuiza6yh988k8n&cover_image=false&theme=novatorem&show_offline=true&background_color=121212&bar_color=1DB954&bar_color_cover=false"
+        width="340"
+        alt="Spotify Now Playing"
+      />
+    </td>
+    <td width="12"></td>
+    <td align="center" width="340">
+      <img
+        src="https://raw.githubusercontent.com/basit3000/basit3000/main/assets/steam-now-playing.png"
+        width="340"
+        alt="Steam Now Playing"
+      />
+    </td>
+  </tr>
+</table>
 
 [![Stats](https://github-profile-summary-cards.vercel.app/api/cards/stats?username=basit3000&theme=transparent)](https://github.com/basit3000)
 

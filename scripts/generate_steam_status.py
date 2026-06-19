@@ -103,25 +103,25 @@ def draw_steam_icon(draw: ImageDraw.ImageDraw) -> None:
 
 
 def build_png(title: str, detail: str, accent: str, output: Path) -> None:
-    if len(detail) > 42:
-        detail = detail[:39] + "..."
+    if len(detail) > 34:
+        detail = detail[:31] + "..."
 
-    width, height = 420, 120
+    width, height = 340, 112
     image = Image.new("RGB", (width, height), "#171a21")
     draw = ImageDraw.Draw(image)
 
     draw.rounded_rectangle((0, 0, width - 1, height - 1), radius=10, fill="#1b2838", outline="#2a475e")
     draw_steam_icon(draw)
 
-    title_font = load_font(14, bold=True)
-    detail_font = load_font(22, bold=True)
-    sub_font = load_font(12)
-    brand_font = load_font(11, bold=True)
+    title_font = load_font(13, bold=True)
+    detail_font = load_font(20, bold=True)
+    sub_font = load_font(11)
+    brand_font = load_font(10, bold=True)
 
-    draw.text((84, 28), title, fill="#66c0f4", font=title_font)
-    draw.text((84, 48), detail, fill=accent, font=detail_font)
-    draw.text((84, 82), "Now playing on Steam", fill="#8f98a0", font=sub_font)
-    draw.text((330, 12), "STEAM", fill="#5c6978", font=brand_font)
+    draw.text((84, 26), title, fill="#66c0f4", font=title_font)
+    draw.text((84, 46), detail, fill=accent, font=detail_font)
+    draw.text((84, 78), "Now playing on Steam", fill="#8f98a0", font=sub_font)
+    draw.text((268, 12), "STEAM", fill="#5c6978", font=brand_font)
 
     output.parent.mkdir(parents=True, exist_ok=True)
     image.save(output, format="PNG")
