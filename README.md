@@ -16,13 +16,13 @@ Backend developer, mostly Python. I build APIs, automation, and small tools — 
 ## What I build
 
 **Automation & integrations**  
-Scripts and pipelines that connect services — deployment setup, dynamic IP updates, pulling data from one API and pushing it somewhere useful.
+Scripts and pipelines that connect services (deployment setup, dynamic IP updates, pulling data from one API and pushing it somewhere useful).
 
 **Personal productivity tools**  
-Trackers and small web apps for the boring problems that deserve a proper backend — diet logging, job applications, ticket booking, that kind of thing.
+Trackers and small web apps for the boring problems that deserve a proper backend e.g. diet logging, job applications, ticket booking, that kind of thing.
 
 **Media & consumption tooling**  
-When official apps fall short — better shuffle logic, syncing watchlists to Notion, tracking things I actually care about. Anime lists, films, music; if there's an API and the UX annoys me, I'll probably build something.
+Better shuffle logic, syncing watchlists to Notion, tracking things I actually care about. Anime lists, films, music; if there's an API and the UX annoys me, I'll probably build something.
 
 ## Side quests
 
@@ -30,11 +30,32 @@ Personal repos — the kind you start because the official app or workflow wasn'
 
 <div align="center">
 
-[![mal-to-notion](https://github-readme-stats.vercel.app/api/pin/?username=basit3000&repo=mal-to-notion&theme=transparent&hide_border=true&title_color=58a6ff&icon_color=C084FC&text_color=c9d1d9&description_lines=2)](https://github.com/basit3000/mal-to-notion)
-[![Spotify-True-Random](https://github-readme-stats.vercel.app/api/pin/?username=basit3000&repo=Spotify-True-Random&theme=transparent&hide_border=true&title_color=58a6ff&icon_color=1DB954&text_color=c9d1d9&description_lines=2)](https://github.com/basit3000/Spotify-True-Random)
-
-[![Django-Setup-Script](https://github-readme-stats.vercel.app/api/pin/?username=basit3000&repo=Django-Setup-Script&theme=transparent&hide_border=true&title_color=58a6ff&icon_color=3776AB&text_color=c9d1d9&description_lines=2)](https://github.com/basit3000/Django-Setup-Script)
-[![Diet-Analysis](https://github-readme-stats.vercel.app/api/pin/?username=basit3000&repo=Diet-Analysis&theme=transparent&hide_border=true&title_color=58a6ff&icon_color=F97316&text_color=c9d1d9&description_lines=2)](https://github.com/basit3000/Diet-Analysis)
+<table align="center">
+  <tr>
+    <td align="center" valign="top">
+      <a href="https://github.com/basit3000/mal-to-notion">
+        <img src="https://github-readme-stats.vercel.app/api/pin/?username=basit3000&repo=mal-to-notion&theme=transparent&hide_border=true&title_color=58a6ff&icon_color=C084FC&text_color=c9d1d9&description_lines_count=3" alt="mal-to-notion" />
+      </a>
+    </td>
+    <td align="center" valign="top">
+      <a href="https://github.com/basit3000/Spotify-True-Random">
+        <img src="https://github-readme-stats.vercel.app/api/pin/?username=basit3000&repo=Spotify-True-Random&theme=transparent&hide_border=true&title_color=58a6ff&icon_color=1DB954&text_color=c9d1d9&description_lines_count=3" alt="Spotify-True-Random" />
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" valign="top">
+      <a href="https://github.com/basit3000/Django-Setup-Script">
+        <img src="https://github-readme-stats.vercel.app/api/pin/?username=basit3000&repo=Django-Setup-Script&theme=transparent&hide_border=true&title_color=58a6ff&icon_color=3776AB&text_color=c9d1d9&description_lines_count=3" alt="Django-Setup-Script" />
+      </a>
+    </td>
+    <td align="center" valign="top">
+      <a href="https://github.com/basit3000/Diet-Analysis">
+        <img src="https://github-readme-stats.vercel.app/api/pin/?username=basit3000&repo=Diet-Analysis&theme=transparent&hide_border=true&title_color=58a6ff&icon_color=F97316&text_color=c9d1d9&description_lines_count=3" alt="Diet-Analysis" />
+      </a>
+    </td>
+  </tr>
+</table>
 
 *anime → Notion · shuffle that lies less · one-command Django · diet data in Sheets*
 
