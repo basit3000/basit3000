@@ -4,17 +4,26 @@
 from __future__ import annotations
 
 import html
+import math
 import os
 import re
 import sys
+import time
 import urllib.error
 import urllib.request
+from io import BytesIO
 from pathlib import Path
 
 from PIL import Image, ImageDraw, ImageFont
 
+try:
+    import cairosvg
+except ImportError:  # pragma: no cover - local fallback without cairo
+    cairosvg = None
+
 SPOTIFY_UID = os.environ.get("SPOTIFY_UID", "ic9zxmbzknyeuiza6yh988k8n")
 OUTPUT = Path(os.environ.get("OUTPUT_PATH", "assets/spotify-now-playing.png"))
+EQ_BAR_COUNT = 70
 
 SPOTIFY_VIEW_URL = (
     "https://spotify-github-profile.kittinanx.com/api/view"
@@ -22,17 +31,17 @@ SPOTIFY_VIEW_URL = (
     "&show_offline=true&background_color=121212"
 )
 
+SPOTIFY_ICON_SVG = """
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+  <path fill="#1db954" d="M248 8C111.1 8 0 119.1 0 256s111.1 248 248 248 248-111.1 248-248S384.9 8 248 8zm100.7 364.9c-4.2 0-6.8-1.3-10.7-3.6-62.4-37.6-135-39.2-206.7-24.5-3.9 1-9 0.6-12.3-3.3-1.2-2.6-2.6-4.9-3.6-7.3-1.2-4.2-.4-9.8 4.5-12.8 3.1-1.9 6.6-2.9 10.1-3.7 78.5-20.3 155.7-14.6 219.3-8.5 19.8 2.2 39.9 6.2 56.7 12.7 3.1 1.2 5.5 3 7.5 6.1 2.7 4.8 2.4 9.8-1.1 13.8-2.5 2.9-6.1 4.6-10.3 5.1zm9.4-49.9c-4.2 0-6.8-1.3-10.7-3.6-62.4-37.6-135-39.2-206.7-24.5-3.9 1-9 0.6-12.3-3.3-1.2-2.6-2.6-4.9-3.6-7.3-2.7-4.8-2.4-9.8 1.1-13.8 2.5-2.9 6.1-4.6 10.3-5.1 72.2-14.8 147.9-6.2 212.3-8.5 20.8-2.2 41.7-1.3 62.9 5.4 3.1 1.2 5.5 3 7.5 6.1 2.7 4.8 2.4 9.8-1.1 13.8-2.5 2.9-6.1 4.6-10.3 5.1-62 12.8-127.7 14.6-195.7 5.4zm8.4-49.6c-4.2 0-6.8-1.3-10.7-3.6-62.4-37.6-135-39.2-206.7-24.5-3.9 1-9 0.6-12.3-3.3-1.2-2.6-2.6-4.9-3.6-7.3-2.7-4.8-2.4-9.8 1.1-13.8 2.5-2.9 6.1-4.6 10.3-5.1 72.2-14.8 147.9-6.2 212.3-8.5 20.8-2.2 41.7-1.3 62.9 5.4 3.1 1.2 5.5 3 7.5 6.1 2.7 4.8 2.4 9.8-1.1 13.8-2.5 2.9-6.1 4.6-10.3 5.1-62 12.8-127.7 14.6-195.7 5.4z"/>
+</svg>
+"""
+
 FONT_CANDIDATES = (
     "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
     "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
     "C:/Windows/Fonts/segoeui.ttf",
-    "C:/Windows/Fonts/segoeui.ttf",
     "C:/Windows/Fonts/arial.ttf",
-)
-
-EQ_HEIGHTS = (
-    5, 9, 12, 8, 14, 10, 6, 13, 7, 11, 9, 14, 6, 10, 12, 8, 13, 7, 11, 9,
-    14, 6, 10, 12, 8, 13, 7, 11, 9, 14, 6, 10, 12, 8, 13, 7, 11, 9, 14, 6,
 )
 
 
@@ -80,27 +89,58 @@ def truncate(text: str, max_len: int) -> str:
     return text[: max_len - 3] + "..."
 
 
-def draw_spotify_icon(draw: ImageDraw.ImageDraw) -> None:
-    cx, cy, r = 42, 56, 24
-    draw.ellipse((cx - r, cy - r, cx + r, cy + r), fill="#1db954")
-    draw.arc((cx - 14, cy - 18, cx + 14, cy + 4), start=200, end=340, fill="#121212", width=3)
-    draw.arc((cx - 10, cy - 10, cx + 10, cy + 10), start=200, end=340, fill="#121212", width=3)
-    draw.arc((cx - 6, cy - 2, cx + 6, cy + 18), start=200, end=340, fill="#121212", width=3)
+def spotify_green(alpha: float) -> tuple[int, int, int]:
+    base = (29, 185, 84)
+    background = (18, 18, 18)
+    return tuple(
+        int(background[index] + (base[index] - background[index]) * alpha)
+        for index in range(3)
+    )
 
 
-def draw_equalizer(draw: ImageDraw.ImageDraw, *, active: bool) -> None:
+def load_spotify_icon(size: int = 30) -> Image.Image:
+    if cairosvg is None:
+        raise RuntimeError("cairosvg is required to render the Spotify icon")
+
+    png_bytes = cairosvg.svg2png(
+        bytestring=SPOTIFY_ICON_SVG.encode("utf-8"),
+        output_width=size,
+        output_height=size,
+    )
+    return Image.open(BytesIO(png_bytes)).convert("RGBA")
+
+
+def equalizer_bar_height(index: int, timestamp: float) -> tuple[float, float]:
+    """Mirror the portfolio equalizer timing — returns height and opacity."""
+    duration_ms = 350 + (index * 13) % 150
+    delay_ms = (index * 41) % 280
+    phase = ((timestamp * 1000 + delay_ms) % (duration_ms * 2)) / duration_ms
+    wave = phase if phase <= 1 else 2 - phase
+    height = 3 + wave * 11
+    opacity = 0.35 + wave * 0.65
+    return height, opacity
+
+
+def draw_equalizer(draw: ImageDraw.ImageDraw, *, active: bool, timestamp: float | None = None) -> None:
+    if not active:
+        return
+
     left, right, bottom = 20, 320, 104
-    bar_count = len(EQ_HEIGHTS)
     gap = 2
-    bar_width = (right - left - gap * (bar_count - 1)) / bar_count
+    bar_width = (right - left - gap * (EQ_BAR_COUNT - 1)) / EQ_BAR_COUNT
+    now = timestamp if timestamp is not None else time.time()
 
-    for index, height in enumerate(EQ_HEIGHTS):
+    for index in range(EQ_BAR_COUNT):
+        height, opacity = equalizer_bar_height(index, now)
         x0 = left + index * (bar_width + gap)
         x1 = x0 + bar_width
-        bar_height = height if active else 3
         y1 = bottom
-        y0 = y1 - bar_height
-        draw.rounded_rectangle((x0, y0, x1, y1), radius=1, fill="#1db954")
+        y0 = y1 - height
+        draw.rounded_rectangle(
+            (x0, y0, x1, y1),
+            radius=1,
+            fill=spotify_green(opacity),
+        )
 
 
 def build_png(artist: str, song: str, is_playing: bool, output: Path) -> None:
@@ -109,7 +149,9 @@ def build_png(artist: str, song: str, is_playing: bool, output: Path) -> None:
     draw = ImageDraw.Draw(image)
 
     draw.rounded_rectangle((0, 0, width - 1, height - 1), radius=10, outline="#2a2a2a")
-    draw_spotify_icon(draw)
+
+    icon = load_spotify_icon(30)
+    image.paste(icon, (27, 41), icon)
 
     artist_font = load_font(18, bold=True)
     song_font = load_font(16)
