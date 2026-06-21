@@ -14,19 +14,16 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Install dependencies
-        run: pip install pillow cairosvg
-
-      - name: Generate Spotify status image
+      - name: Generate Spotify status SVG
         env:
           SPOTIFY_UID: "ic9zxmbzknyeuiza6yh988k8n"
-          OUTPUT_PATH: assets/spotify-now-playing.png
+          OUTPUT_PATH: assets/spotify-now-playing.svg
         run: python scripts/generate_spotify_status.py
 
       - name: Commit and push
         run: |
           git config user.name github-actions[bot]
           git config user.email github-actions[bot]@users.noreply.github.com
-          git add assets/spotify-now-playing.png
+          git add assets/spotify-now-playing.svg
           git diff --staged --quiet || git commit -m "update spotify now playing status"
           git push

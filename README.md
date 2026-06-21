@@ -99,7 +99,7 @@ Usually in an RPG, catching up on anime, or arguing that Spotify shuffle isn't a
   <tr>
     <td align="center" valign="top">
       <img
-        src="https://raw.githubusercontent.com/basit3000/basit3000/main/assets/spotify-now-playing.png"
+        src="https://raw.githubusercontent.com/basit3000/basit3000/main/assets/spotify-now-playing.svg"
         width="340"
         alt="Spotify Now Playing"
       />
