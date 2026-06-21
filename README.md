@@ -95,17 +95,16 @@ Usually in an RPG, catching up on anime, or arguing that Spotify shuffle isn't a
 
 <h3>Now playing</h3>
 
-<table align="center">
+<table align="center" cellpadding="0" cellspacing="8">
   <tr>
-    <td align="center" width="340">
+    <td align="center" valign="top">
       <img
-        src="https://spotify-github-profile.kittinanx.com/api/view?uid=ic9zxmbzknyeuiza6yh988k8n&cover_image=false&theme=compact&show_offline=true&background_color=121212&bar_color=1DB954&bar_color_cover=false"
+        src="https://raw.githubusercontent.com/basit3000/basit3000/main/assets/spotify-now-playing.png"
         width="340"
         alt="Spotify Now Playing"
       />
     </td>
-    <td width="12"></td>
-    <td align="center" width="340">
+    <td align="center" valign="top">
       <img
         src="https://raw.githubusercontent.com/basit3000/basit3000/main/assets/steam-now-playing.png"
         width="340"
