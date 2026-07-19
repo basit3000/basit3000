@@ -1,0 +1,81 @@
+name: Update README Cards
+
+on:
+  schedule:
+    - cron: "0 */12 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/readme-cards.yml"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Stats card
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: stats
+          options: username=basit3000&show_icons=true&theme=transparent&hide_border=true&count_private=true
+          path: assets/cards/stats.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Top languages card
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: top-langs
+          options: username=basit3000&layout=compact&theme=transparent&hide_border=true
+          path: assets/cards/top-langs.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Pin mal-to-notion
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: pin
+          options: username=basit3000&repo=mal-to-notion&theme=transparent&hide_border=true&title_color=58a6ff&icon_color=C084FC&text_color=c9d1d9&description_lines_count=3
+          path: assets/cards/pin-mal-to-notion.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Pin Spotify-True-Random
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: pin
+          options: username=basit3000&repo=Spotify-True-Random&theme=transparent&hide_border=true&title_color=58a6ff&icon_color=1DB954&text_color=c9d1d9&description_lines_count=3
+          path: assets/cards/pin-spotify-true-random.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Pin Django-Setup-Script
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: pin
+          options: username=basit3000&repo=Django-Setup-Script&theme=transparent&hide_border=true&title_color=58a6ff&icon_color=3776AB&text_color=c9d1d9&description_lines_count=3
+          path: assets/cards/pin-django-setup-script.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Pin Diet-Analysis
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: pin
+          options: username=basit3000&repo=Diet-Analysis&theme=transparent&hide_border=true&title_color=58a6ff&icon_color=F97316&text_color=c9d1d9&description_lines_count=3
+          path: assets/cards/pin-diet-analysis.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Streak + summary cards
+        run: |
+          curl -sL -o assets/cards/streak.svg \
+            "https://streak-stats.demolab.com/?user=basit3000&theme=transparent&hide_border=true"
+          curl -sL -o assets/cards/summary-stats.svg \
+            "https://github-profile-summary-cards.vercel.app/api/cards/stats?username=basit3000&theme=transparent"
+
+      - name: Commit cards
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/cards/*.svg
+          git commit -m "chore: refresh README stats cards" || exit 0
+          git push
