@@ -130,7 +130,17 @@
           data-testid="lang-progress"
           x="0"
           y="0"
-          width="105.39"
+          width="108.62"
+          height="8"
+          fill="#f1e05a"
+        />
+      
+        <rect
+          mask="url(#rect-mask)"
+          data-testid="lang-progress"
+          x="108.62"
+          y="0"
+          width="59.64"
           height="8"
           fill="#3572A5"
         />
@@ -138,9 +148,9 @@
         <rect
           mask="url(#rect-mask)"
           data-testid="lang-progress"
-          x="105.39"
+          x="168.26"
           y="0"
-          width="53.15"
+          width="33.67"
           height="8"
           fill="#e34c26"
         />
@@ -148,29 +158,9 @@
         <rect
           mask="url(#rect-mask)"
           data-testid="lang-progress"
-          x="158.54"
+          x="201.93"
           y="0"
-          width="29.2"
-          height="8"
-          fill="#A97BFF"
-        />
-      
-        <rect
-          mask="url(#rect-mask)"
-          data-testid="lang-progress"
-          x="187.73999999999998"
-          y="0"
-          width="24.94"
-          height="8"
-          fill="#4F5D95"
-        />
-      
-        <rect
-          mask="url(#rect-mask)"
-          data-testid="lang-progress"
-          x="212.67999999999998"
-          y="0"
-          width="23.23"
+          width="18.71"
           height="8"
           fill="#663399"
         />
@@ -178,55 +168,65 @@
         <rect
           mask="url(#rect-mask)"
           data-testid="lang-progress"
-          x="235.90999999999997"
+          x="220.64000000000001"
           y="0"
-          width="14.1"
+          width="15.84"
           height="8"
-          fill="#b07219"
+          fill="#A97BFF"
+        />
+      
+        <rect
+          mask="url(#rect-mask)"
+          data-testid="lang-progress"
+          x="236.48000000000002"
+          y="0"
+          width="13.53"
+          height="8"
+          fill="#4F5D95"
         />
       
       
     <g transform="translate(0, 25)">
       <g transform="translate(0, 0)"><g transform="translate(0, 0)">
     <g class="stagger" style="animation-delay: 450ms">
-      <circle cx="5" cy="6" r="5" fill="#3572A5" />
+      <circle cx="5" cy="6" r="5" fill="#f1e05a" />
       <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-        Python 42.15%
+        JavaScript 43.45%
       </text>
     </g>
   </g><g transform="translate(0, 25)">
     <g class="stagger" style="animation-delay: 600ms">
-      <circle cx="5" cy="6" r="5" fill="#e34c26" />
+      <circle cx="5" cy="6" r="5" fill="#3572A5" />
       <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-        HTML 21.26%
+        Python 23.85%
       </text>
     </g>
   </g><g transform="translate(0, 50)">
     <g class="stagger" style="animation-delay: 750ms">
-      <circle cx="5" cy="6" r="5" fill="#A97BFF" />
+      <circle cx="5" cy="6" r="5" fill="#e34c26" />
       <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-        Kotlin 11.68%
+        HTML 13.47%
       </text>
     </g>
   </g></g><g transform="translate(150, 0)"><g transform="translate(0, 0)">
     <g class="stagger" style="animation-delay: 450ms">
-      <circle cx="5" cy="6" r="5" fill="#4F5D95" />
+      <circle cx="5" cy="6" r="5" fill="#663399" />
       <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-        PHP 9.98%
+        CSS 7.48%
       </text>
     </g>
   </g><g transform="translate(0, 25)">
     <g class="stagger" style="animation-delay: 600ms">
-      <circle cx="5" cy="6" r="5" fill="#663399" />
+      <circle cx="5" cy="6" r="5" fill="#A97BFF" />
       <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-        CSS 9.29%
+        Kotlin 6.34%
       </text>
     </g>
   </g><g transform="translate(0, 50)">
     <g class="stagger" style="animation-delay: 750ms">
-      <circle cx="5" cy="6" r="5" fill="#b07219" />
+      <circle cx="5" cy="6" r="5" fill="#4F5D95" />
       <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-        Java 5.64%
+        PHP 5.41%
       </text>
     </g>
   </g></g>
