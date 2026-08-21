@@ -104,6 +104,8 @@ Also shipping: [portfolio](https://github.com/basit3000/portfolio) · [job-scout
 
 Usually in an RPG, catching up on anime, or arguing that Spotify shuffle isn't actually random — which is how side projects get started.
 
+The same live HUD as the [Gaming page](https://basitzaheer.de/gaming) — match history, currently watching, LeetCode, and Twitch.
+
 <div align="center">
 
 ### Now playing
@@ -155,7 +157,7 @@ Usually in an RPG, catching up on anime, or arguing that Spotify shuffle isn't a
     <td width="16"></td>
     <td align="center" valign="top" width="340">
       <a href="https://www.twitch.tv/meyramax">
-        <img src="https://img.shields.io/twitch/status/meyramax?style=for-the-badge&logo=twitch&logoColor=white&label=Twitch" alt="Twitch status" />
+        <img src="https://basitzaheer.de/api/twitch-widget.svg" width="340" alt="Twitch status" />
       </a>
     </td>
   </tr>
