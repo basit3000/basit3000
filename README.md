@@ -6,6 +6,9 @@
 
 Backend developer, mostly Python. I build APIs, automation, and small tools — especially when something I use daily has a gap worth fixing.
 
+The lived-in version of that is the site: **[basitzaheer.de](https://basitzaheer.de)** — Radiant/Dire atlas, live Spotify and Steam, Dota match history, currently watching, and the tools below.
+
+[![Website](https://img.shields.io/badge/Site-basitzaheer.de-4f8f3a?style=for-the-badge)](https://basitzaheer.de)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/muhammad-basit-zaheer/)
 [![Email](https://img.shields.io/badge/Email-Say%20hi-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:basitzaheer02@gmail.com)
 [![Open to](https://img.shields.io/badge/Open%20to-Backend%20%7C%20Automation%20%7C%20Integrations-58a6ff?style=for-the-badge)](#get-in-touch)
@@ -17,7 +20,7 @@ Backend developer, mostly Python. I build APIs, automation, and small tools — 
 
 <br/>
 
-[![My Skills](https://skillicons.dev/icons?i=python,django,fastapi,flask,docker,js,java,kotlin,linux,git)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=python,django,fastapi,flask,docker,js,react,vite,java,kotlin,linux,git)](https://skillicons.dev)
 
 ![Backend](https://img.shields.io/badge/Focus-Backend-21262d?style=flat-square)
 ![Automation](https://img.shields.io/badge/Focus-Automation-21262d?style=flat-square)
@@ -76,23 +79,24 @@ Personal repos — the kind you start because the official app or workflow wasn'
 
 *anime → Notion · shuffle that lies less · one-command Django · diet data in Sheets*
 
+Also shipping: [portfolio](https://github.com/basit3000/portfolio) · [job-scout](https://github.com/basit3000/job-scout) · [PD-League](https://pkdota.com)
+
 </div>
 
 ---
 
 ## Stack
 
-`Python` · `Django` · `FastAPI` · `Flask` · `Docker` · `REST APIs` · `Google Sheets API` · `Notion API` · `Kotlin` · `Shell` · `Vercel` · `ArgoCD`
+`Python` · `Django` · `FastAPI` · `Flask` · `React` · `Vite` · `Docker` · `REST APIs` · `Google Sheets API` · `Notion API` · `Kotlin` · `Shell` · `Vercel` · `ArgoCD`
 
 ---
 
 ## Currently
 
-- Building my portfolio site
-- Tinkering with LLM-related stuff
-- Branching into Kotlin for a personal Spotify tool on the side
+- [basitzaheer.de](https://basitzaheer.de) is live — Radiant/Dire portfolio with live Spotify, Steam, OpenDota matches, and MAL currently watching
+- Spotify True Random is a Python CLI + Android app, not a side experiment anymore
+- Job Scout and PD-League ([pkdota.com](https://pkdota.com)) are the other active builds
 - Always up for interesting backend or automation problems
-- **Todo:** anime "currently watching" widget via Jikan/MAL API
 
 ---
 
@@ -159,5 +163,6 @@ Usually in an RPG, catching up on anime, or arguing that Spotify shuffle isn't a
 
 ## Get in touch
 
+- **Site:** [basitzaheer.de](https://basitzaheer.de)
 - **Email:** [basitzaheer02@gmail.com](mailto:basitzaheer02@gmail.com)
 - **LinkedIn:** [muhammad-basit-zaheer](https://www.linkedin.com/in/muhammad-basit-zaheer/)
