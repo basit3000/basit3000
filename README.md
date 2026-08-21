@@ -111,11 +111,13 @@ Usually in an RPG, catching up on anime, or arguing that Spotify shuffle isn't a
 <table>
   <tr>
     <td align="center" width="340">
-      <img
-        src="https://spotify-github-profile.kittinanx.com/api/view?uid=ic9zxmbzknyeuiza6yh988k8n&cover_image=false&theme=novatorem&show_offline=true&background_color=121212&bar_color=1DB954&bar_color_cover=false"
-        width="340"
-        alt="Spotify Now Playing"
-      />
+      <a href="https://basitzaheer.de">
+        <img
+          src="https://basitzaheer.de/api/spotify-widget.svg"
+          width="340"
+          alt="Spotify Now Playing"
+        />
+      </a>
     </td>
     <td width="16"></td>
     <td align="center" width="340">
@@ -124,6 +126,37 @@ Usually in an RPG, catching up on anime, or arguing that Spotify shuffle isn't a
         width="340"
         alt="Steam Now Playing"
       />
+    </td>
+  </tr>
+</table>
+
+<br/>
+
+<table>
+  <tr>
+    <td align="center" valign="top" width="340">
+      <a href="https://www.dotabuff.com/players/395370670">
+        <img src="https://basitzaheer.de/api/opendota-widget.svg" width="340" alt="Recent Dota 2 matches" />
+      </a>
+    </td>
+    <td width="16"></td>
+    <td align="center" valign="top" width="340">
+      <a href="https://myanimelist.net/animelist/MeyraMax">
+        <img src="https://basitzaheer.de/api/mal-widget.svg" width="340" alt="Currently watching" />
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" valign="top" width="340">
+      <a href="https://leetcode.com/u/basit3000/">
+        <img src="https://basitzaheer.de/api/leetcode-widget.svg" width="340" alt="LeetCode stats" />
+      </a>
+    </td>
+    <td width="16"></td>
+    <td align="center" valign="top" width="340">
+      <a href="https://www.twitch.tv/meyramax">
+        <img src="https://img.shields.io/twitch/status/meyramax?style=for-the-badge&logo=twitch&logoColor=white&label=Twitch" alt="Twitch status" />
+      </a>
     </td>
   </tr>
 </table>
