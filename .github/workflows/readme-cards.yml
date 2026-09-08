@@ -9,73 +9,152 @@ on:
     paths:
       - ".github/workflows/readme-cards.yml"
 
+# Serialise with the Steam workflow so the two bots never race a push to main.
+concurrency:
+  group: readme-push
+  cancel-in-progress: false
+
+env:
+  USERNAME: basit3000
+
 jobs:
-  build:
+  # Render every card twice: once for GitHub dark mode, once for light mode.
+  # README.md picks the right one with <picture> + prefers-color-scheme, so
+  # text stays readable no matter which theme a visitor uses.
+  render:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - theme: dark
+            title: 58a6ff # GitHub dark link blue
+            text: c9d1d9 # GitHub dark foreground
+            muted: 8b949e # GitHub dark muted text
+            stroke: 30363d
+          - theme: light
+            title: 0969da # GitHub light link blue
+            text: 1f2328 # GitHub light foreground
+            muted: 57606a # GitHub light muted text
+            stroke: d0d7de
+    env:
+      OUT: assets/cards/${{ matrix.theme }}
+      # Shared card options: transparent background, no border, theme-aware text.
+      BASE: username=basit3000&hide_border=true&bg_color=00000000&title_color=${{ matrix.title }}&text_color=${{ matrix.text }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
+
+      - name: Ensure output dir
+        run: mkdir -p "${OUT}"
 
       - name: Stats card
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: stats
-          options: username=basit3000&show_icons=true&theme=transparent&hide_border=true&count_private=true
-          path: assets/cards/stats.svg
+          options: ${{ env.BASE }}&show_icons=true&icon_color=${{ matrix.title }}&ring_color=${{ matrix.title }}&count_private=true
+          path: ${{ env.OUT }}/stats.svg
           token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: true
 
       - name: Top languages card
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: top-langs
-          options: username=basit3000&layout=compact&theme=transparent&hide_border=true
-          path: assets/cards/top-langs.svg
+          options: ${{ env.BASE }}&layout=compact
+          path: ${{ env.OUT }}/top-langs.svg
           token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: true
 
       - name: Pin mal-to-notion
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: pin
-          options: username=basit3000&repo=mal-to-notion&theme=transparent&hide_border=true&title_color=58a6ff&icon_color=C084FC&text_color=c9d1d9&description_lines_count=3
-          path: assets/cards/pin-mal-to-notion.svg
+          options: ${{ env.BASE }}&repo=mal-to-notion&icon_color=C084FC&description_lines_count=3
+          path: ${{ env.OUT }}/pin-mal-to-notion.svg
           token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: true
 
       - name: Pin Spotify-True-Random
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: pin
-          options: username=basit3000&repo=Spotify-True-Random&theme=transparent&hide_border=true&title_color=58a6ff&icon_color=1DB954&text_color=c9d1d9&description_lines_count=3
-          path: assets/cards/pin-spotify-true-random.svg
+          options: ${{ env.BASE }}&repo=Spotify-True-Random&icon_color=1DB954&description_lines_count=3
+          path: ${{ env.OUT }}/pin-spotify-true-random.svg
           token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: true
 
       - name: Pin Django-Setup-Script
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: pin
-          options: username=basit3000&repo=Django-Setup-Script&theme=transparent&hide_border=true&title_color=58a6ff&icon_color=3776AB&text_color=c9d1d9&description_lines_count=3
-          path: assets/cards/pin-django-setup-script.svg
+          options: ${{ env.BASE }}&repo=Django-Setup-Script&icon_color=3776AB&description_lines_count=3
+          path: ${{ env.OUT }}/pin-django-setup-script.svg
           token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: true
 
       - name: Pin Diet-Analysis
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: pin
-          options: username=basit3000&repo=Diet-Analysis&theme=transparent&hide_border=true&title_color=58a6ff&icon_color=F97316&text_color=c9d1d9&description_lines_count=3
-          path: assets/cards/pin-diet-analysis.svg
+          options: ${{ env.BASE }}&repo=Diet-Analysis&icon_color=F97316&description_lines_count=3
+          path: ${{ env.OUT }}/pin-diet-analysis.svg
           token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: true
 
-      - name: Streak + summary cards
+      - name: Streak card
         run: |
-          curl -sL -o assets/cards/streak.svg \
-            "https://streak-stats.demolab.com/?user=basit3000&theme=transparent&hide_border=true"
-          curl -sL -o assets/cards/summary-stats.svg \
-            "https://github-profile-summary-cards.vercel.app/api/cards/stats?username=basit3000&theme=transparent"
+          set -euo pipefail
+          url="https://streak-stats.demolab.com/?user=${USERNAME}&hide_border=true&background=00000000"
+          url+="&stroke=${{ matrix.stroke }}&ring=${{ matrix.title }}&fire=${{ matrix.title }}"
+          url+="&currStreakLabel=${{ matrix.title }}&currStreakNum=${{ matrix.text }}&sideNums=${{ matrix.text }}"
+          url+="&sideLabels=${{ matrix.text }}&dates=${{ matrix.muted }}"
+          curl -sSfL --retry 3 --retry-delay 5 -o "${OUT}/streak.svg" "$url"
+          # The service returns an SVG even on failure; make sure it's a real card.
+          grep -q "Total Contributions" "${OUT}/streak.svg"
+
+      - uses: actions/upload-artifact@v7
+        with:
+          name: cards-${{ matrix.theme }}
+          path: ${{ env.OUT }}
+          if-no-files-found: error
+          retention-days: 1
+
+  commit:
+    needs: render
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/download-artifact@v8
+        with:
+          name: cards-dark
+          path: assets/cards/dark
+
+      - uses: actions/download-artifact@v8
+        with:
+          name: cards-light
+          path: assets/cards/light
+
+      - name: Summary card (theme-neutral)
+        run: |
+          set -euo pipefail
+          curl -sSfL --retry 3 --retry-delay 5 -o assets/cards/summary-stats.svg \
+            "https://github-profile-summary-cards.vercel.app/api/cards/stats?username=${USERNAME}&theme=transparent"
+          grep -q "Total Commits" assets/cards/summary-stats.svg
 
       - name: Commit cards
         run: |
+          set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/cards/*.svg
-          git commit -m "chore: refresh README stats cards" || exit 0
+          git add assets/cards
+          if git diff --staged --quiet; then
+            echo "Cards unchanged."
+            exit 0
+          fi
+          git commit -m "chore: refresh README stats cards"
+          # The Steam bot may have pushed in the meantime; replay on top of it.
+          git pull --rebase origin main
           git push

@@ -2,3 +2,6 @@ AGENTS.md
 .github/skills/
 .github/hooks/
 .impeccable/
+scripts/__pycache__/
+__pycache__/
+*.pyc

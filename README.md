@@ -1,6 +1,6 @@
-﻿<div align="center">
+<div align="center">
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=58A6FF&center=true&width=480&lines=Backend+dev+%7C+Python+%7C+Django;If+it%27s+repetitive%2C+I%27ll+script+it;Building+tools+for+things+I+actually+use)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=58A6FF&center=true&width=480&lines=Backend+dev+%7C+Python+%7C+Django;If+it%27s+repetitive%2C+I%27ll+script+it;Building+tools+for+things+I+actually+use)](https://github.com/DenverCoder1/readme-typing-svg)
 
 ### Hey, I'm Basit
 
@@ -15,8 +15,15 @@ The lived-in version of that is the site: **[basitzaheer.de](https://basitzaheer
 
 <br/>
 
-<img src="./assets/cards/stats.svg" alt="GitHub stats" height="165" />
-<img src="./assets/cards/top-langs.svg" alt="Top languages" height="165" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/cards/dark/stats.svg">
+  <img src="./assets/cards/light/stats.svg" alt="GitHub stats" height="165" />
+</picture>
+&nbsp;
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/cards/dark/top-langs.svg">
+  <img src="./assets/cards/light/top-langs.svg" alt="Most used languages" height="165" />
+</picture>
 
 <br/>
 
@@ -52,26 +59,38 @@ Personal repos — the kind you start because the official app or workflow wasn'
 
 <table>
   <tr>
-    <td align="center" valign="top">
+    <td width="50%" align="center" valign="top">
       <a href="https://github.com/basit3000/mal-to-notion">
-        <img src="./assets/cards/pin-mal-to-notion.svg" alt="mal-to-notion" />
+        <picture>
+          <source media="(prefers-color-scheme: dark)" srcset="./assets/cards/dark/pin-mal-to-notion.svg">
+          <img src="./assets/cards/light/pin-mal-to-notion.svg" alt="mal-to-notion" width="400" />
+        </picture>
       </a>
     </td>
-    <td align="center" valign="top">
+    <td width="50%" align="center" valign="top">
       <a href="https://github.com/basit3000/Spotify-True-Random">
-        <img src="./assets/cards/pin-spotify-true-random.svg" alt="Spotify-True-Random" />
+        <picture>
+          <source media="(prefers-color-scheme: dark)" srcset="./assets/cards/dark/pin-spotify-true-random.svg">
+          <img src="./assets/cards/light/pin-spotify-true-random.svg" alt="Spotify-True-Random" width="400" />
+        </picture>
       </a>
     </td>
   </tr>
   <tr>
-    <td align="center" valign="top">
+    <td width="50%" align="center" valign="top">
       <a href="https://github.com/basit3000/Django-Setup-Script">
-        <img src="./assets/cards/pin-django-setup-script.svg" alt="Django-Setup-Script" />
+        <picture>
+          <source media="(prefers-color-scheme: dark)" srcset="./assets/cards/dark/pin-django-setup-script.svg">
+          <img src="./assets/cards/light/pin-django-setup-script.svg" alt="Django-Setup-Script" width="400" />
+        </picture>
       </a>
     </td>
-    <td align="center" valign="top">
+    <td width="50%" align="center" valign="top">
       <a href="https://github.com/basit3000/Diet-Analysis">
-        <img src="./assets/cards/pin-diet-analysis.svg" alt="Diet-Analysis" />
+        <picture>
+          <source media="(prefers-color-scheme: dark)" srcset="./assets/cards/dark/pin-diet-analysis.svg">
+          <img src="./assets/cards/light/pin-diet-analysis.svg" alt="Diet-Analysis" width="400" />
+        </picture>
       </a>
     </td>
   </tr>
@@ -114,20 +133,12 @@ The same live HUD as the [Gaming page](https://basitzaheer.de/gaming) — match 
   <tr>
     <td align="center" width="340">
       <a href="https://basitzaheer.de">
-        <img
-          src="https://basitzaheer.de/api/spotify-widget.svg"
-          width="340"
-          alt="Spotify Now Playing"
-        />
+        <img src="https://www.basitzaheer.de/api/spotify-widget.svg" width="340" alt="Spotify now playing" />
       </a>
     </td>
     <td width="16"></td>
     <td align="center" width="340">
-      <img
-        src="./assets/steam-now-playing.png"
-        width="340"
-        alt="Steam Now Playing"
-      />
+      <img src="./assets/steam-now-playing.png" width="340" alt="Steam now playing" />
     </td>
   </tr>
 </table>
@@ -136,28 +147,28 @@ The same live HUD as the [Gaming page](https://basitzaheer.de/gaming) — match 
 
 <table>
   <tr>
-    <td align="center" valign="top" width="340">
+    <td align="center" width="340">
       <a href="https://www.dotabuff.com/players/395370670">
-        <img src="https://basitzaheer.de/api/opendota-widget.svg" width="340" alt="Recent Dota 2 matches" />
+        <img src="https://www.basitzaheer.de/api/opendota-widget.svg" width="340" alt="Recent Dota 2 matches" />
       </a>
     </td>
     <td width="16"></td>
-    <td align="center" valign="top" width="340">
+    <td align="center" width="340">
       <a href="https://myanimelist.net/animelist/MeyraMax">
-        <img src="https://basitzaheer.de/api/mal-widget.svg" width="340" alt="Currently watching" />
+        <img src="https://www.basitzaheer.de/api/mal-widget.svg" width="340" alt="Currently watching" />
       </a>
     </td>
   </tr>
   <tr>
-    <td align="center" valign="top" width="340">
+    <td align="center" width="340">
       <a href="https://leetcode.com/u/basit3000/">
-        <img src="https://basitzaheer.de/api/leetcode-widget.svg" width="340" alt="LeetCode stats" />
+        <img src="https://www.basitzaheer.de/api/leetcode-widget.svg" width="340" alt="LeetCode stats" />
       </a>
     </td>
     <td width="16"></td>
-    <td align="center" valign="top" width="340">
+    <td align="center" width="340">
       <a href="https://www.twitch.tv/meyramax">
-        <img src="https://basitzaheer.de/api/twitch-widget.svg" width="340" alt="Twitch status" />
+        <img src="https://www.basitzaheer.de/api/twitch-widget.svg" width="340" alt="Twitch status" />
       </a>
     </td>
   </tr>
@@ -171,25 +182,21 @@ The same live HUD as the [Gaming page](https://basitzaheer.de/gaming) — match 
 
 <div align="center">
 
-<img src="./assets/cards/streak.svg" alt="GitHub streak" />
-
-<br/>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/cards/dark/streak.svg">
+  <img src="./assets/cards/light/streak.svg" alt="GitHub contribution streak" />
+</picture>
 
 <img src="./assets/cards/summary-stats.svg" alt="Profile summary stats" />
-
-<br/>
 
 ![Profile views](https://komarev.com/ghpvc/?username=basit3000&label=Profile%20views&color=58a6ff&style=flat)
 ![Followers](https://img.shields.io/github/followers/basit3000?style=flat&logo=github&label=Followers&color=21262d)
 ![Stars](https://img.shields.io/github/stars/basit3000?style=flat&logo=github&label=Stars&color=21262d)
 ![Repos](https://img.shields.io/badge/dynamic/json?url=https://api.github.com/users/basit3000&query=%24.public_repos&label=Repos&style=flat&logo=github&color=21262d)
 
-<br/>
-
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/basit3000/basit3000/output/github-contribution-grid-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/basit3000/basit3000/output/github-contribution-grid-snake.svg">
-  <img alt="GitHub contribution grid snake animation" src="https://raw.githubusercontent.com/basit3000/basit3000/output/github-contribution-grid-snake.svg">
+  <img src="https://raw.githubusercontent.com/basit3000/basit3000/output/github-contribution-grid-snake.svg" alt="GitHub contribution grid snake animation" />
 </picture>
 
 </div>

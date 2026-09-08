@@ -4,18 +4,28 @@ on:
   schedule:
     - cron: "*/10 * * * *"
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/generate_steam_status.py"
+      - ".github/workflows/steam-status.yml"
 
 permissions:
   contents: write
+
+# Serialise with the cards workflow so the two bots never race a push to main.
+concurrency:
+  group: readme-push
+  cancel-in-progress: false
 
 jobs:
   update-steam-status:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Install dependencies
-        run: pip install pillow
+        run: pip install --quiet pillow
 
       - name: Generate Steam status image
         env:
@@ -25,8 +35,14 @@ jobs:
 
       - name: Commit and push
         run: |
-          git config user.name github-actions[bot]
-          git config user.email github-actions[bot]@users.noreply.github.com
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add assets/steam-now-playing.png
-          git diff --staged --quiet || git commit -m "update steam now playing status"
+          if git diff --staged --quiet; then
+            echo "Steam status unchanged."
+            exit 0
+          fi
+          git commit -m "update steam now playing status"
+          git pull --rebase origin main
           git push
