@@ -1,0 +1,52 @@
+name: Update Recent Projects
+
+on:
+  schedule:
+    - cron: "23 */12 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/update_recent_projects.py"
+      - "scripts/test_recent_projects.py"
+      - ".github/workflows/recent-projects.yml"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: readme-push
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: main
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: Test updater
+        run: python -m unittest discover -s scripts -p "test_*.py" -v
+      - name: Refresh public projects
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/update_recent_projects.py
+      - name: Commit changed section
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          if git diff --staged --quiet; then
+            echo "Recent projects unchanged."
+            exit 0
+          fi
+          git commit -m "chore: refresh recent public projects"
+          git pull --rebase origin main
+          git push origin HEAD:main

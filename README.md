@@ -2,16 +2,21 @@
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=58A6FF&center=true&width=480&lines=Backend+dev+%7C+Python+%7C+Django;If+it%27s+repetitive%2C+I%27ll+script+it;Building+tools+for+things+I+actually+use)](https://github.com/DenverCoder1/readme-typing-svg)
 
-### Hey, I'm Basit
+# Hey, I'm Basit
 
 Backend developer, mostly Python. I build APIs, automation, and small tools — especially when something I use daily has a gap worth fixing.
 
-The lived-in version of that is the site: **[basitzaheer.de](https://basitzaheer.de)** — Radiant/Dire atlas, live Spotify and Steam, Dota match history, currently watching, and the tools below.
+My [portfolio](https://basitzaheer.de) brings it all together: projects, live integrations, and a little Dota-inspired personality.
 
-[![Website](https://img.shields.io/badge/Site-basitzaheer.de-4f8f3a?style=for-the-badge)](https://basitzaheer.de)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/muhammad-basit-zaheer/)
-[![Email](https://img.shields.io/badge/Email-Say%20hi-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:basitzaheer02@gmail.com)
-[![Open to](https://img.shields.io/badge/Open%20to-Backend%20%7C%20Automation%20%7C%20Integrations-58a6ff?style=for-the-badge)](#get-in-touch)
+<p align="center">
+  <a href="https://basitzaheer.de"><img src="./assets/buttons/portfolio.svg" width="176" height="44" alt="View my portfolio" /></a>
+  <a href="mailto:basitzaheer02@gmail.com"><img src="./assets/buttons/email.svg" width="176" height="44" alt="Email Basit" /></a>
+  <a href="https://www.linkedin.com/in/muhammad-basit-zaheer/"><img src="./assets/buttons/linkedin.svg" width="176" height="44" alt="Connect with Basit on LinkedIn" /></a>
+</p>
+
+<sub>Open to backend, automation &amp; integration projects</sub>
+
+[Projects](#side-quests) · [Recent updates](#recently-updated) · [Stack](#stack) · [Live dashboard](#off-the-clock) · [Contact](#get-in-touch)
 
 <br/>
 
@@ -66,6 +71,8 @@ Personal repos — the kind you start because the official app or workflow wasn'
           <img src="./assets/cards/light/pin-mal-to-notion.svg" alt="mal-to-notion" width="400" />
         </picture>
       </a>
+      <p>Bring your anime watchlist and community ratings into Notion.</p>
+      <a href="https://github.com/basit3000/mal-to-notion#readme">Explore MAL → Notion →</a>
     </td>
     <td width="50%" align="center" valign="top">
       <a href="https://github.com/basit3000/Spotify-True-Random">
@@ -74,6 +81,8 @@ Personal repos — the kind you start because the official app or workflow wasn'
           <img src="./assets/cards/light/pin-spotify-true-random.svg" alt="Spotify-True-Random" width="400" />
         </picture>
       </a>
+      <p>Playlist shuffle for CLI, web, and Android. Spotify Premium required.</p>
+      <a href="https://github.com/basit3000/Spotify-True-Random#readme">Explore Spotify True Random →</a>
     </td>
   </tr>
   <tr>
@@ -84,6 +93,8 @@ Personal repos — the kind you start because the official app or workflow wasn'
           <img src="./assets/cards/light/pin-django-setup-script.svg" alt="Django-Setup-Script" width="400" />
         </picture>
       </a>
+      <p>Automate your Django environment and server setup.</p>
+      <a href="https://github.com/basit3000/Django-Setup-Script#readme">Explore Django Setup Script →</a>
     </td>
     <td width="50%" align="center" valign="top">
       <a href="https://github.com/basit3000/Diet-Analysis">
@@ -92,13 +103,15 @@ Personal repos — the kind you start because the official app or workflow wasn'
           <img src="./assets/cards/light/pin-diet-analysis.svg" alt="Diet-Analysis" width="400" />
         </picture>
       </a>
+      <p>Log and analyse diet data with Google Sheets.</p>
+      <a href="https://github.com/basit3000/Diet-Analysis#readme">Explore Diet Analysis →</a>
     </td>
   </tr>
 </table>
 
 *anime → Notion · shuffle that lies less · one-command Django · diet data in Sheets*
 
-Also shipping: [portfolio](https://github.com/basit3000/portfolio) · [job-scout](https://github.com/basit3000/job-scout) · [PD-League](https://pkdota.com)
+Also shipping: [live portfolio](https://basitzaheer.de) · [job-scout](https://github.com/basit3000/job-scout) · [PD-League](https://pkdota.com)
 
 </div>
 
@@ -110,10 +123,22 @@ Also shipping: [portfolio](https://github.com/basit3000/portfolio) · [job-scout
 
 ---
 
+## Recently updated
+
+Latest pushes to my public projects; dates are in UTC.
+
+<!-- RECENT-PROJECTS:START -->
+- **[job\-scout](https://github.com/basit3000/job-scout)** · JavaScript · Last pushed 2026-09-13
+- **[Translation\-service](https://github.com/basit3000/Translation-service)** · HTML · Last pushed 2026-09-08
+- **[trainapplication](https://github.com/basit3000/trainapplication)** · Python · Last pushed 2026-09-08
+<!-- RECENT-PROJECTS:END -->
+
+---
+
 ## Currently
 
 - [basitzaheer.de](https://basitzaheer.de) is live — Radiant/Dire portfolio with live Spotify, Steam, OpenDota matches, and MAL currently watching
-- Spotify True Random is a Python CLI + Android app, not a side experiment anymore
+- [Spotify True Random](https://github.com/basit3000/Spotify-True-Random) has a Python CLI, local web app, and Android app
 - Job Scout and PD-League ([pkdota.com](https://pkdota.com)) are the other active builds
 - Always up for interesting backend or automation problems
 
@@ -129,16 +154,21 @@ The same live HUD as the [Gaming page](https://basitzaheer.de/gaming) — match 
 
 ### Now playing
 
+Cards refresh periodically and may show cached activity.
+
 <table>
   <tr>
-    <td align="center" width="340">
+    <td align="center" width="50%" valign="top">
       <a href="https://basitzaheer.de">
         <img src="https://www.basitzaheer.de/api/spotify-widget.svg" width="340" alt="Spotify now playing" />
       </a>
+      <br /><a href="https://basitzaheer.de">Music on my portfolio</a>
     </td>
-    <td width="16"></td>
-    <td align="center" width="340">
-      <img src="./assets/steam-now-playing.png" width="340" alt="Steam now playing" />
+        <td align="center" width="50%" valign="top">
+      <a href="https://steamcommunity.com/profiles/76561198355636398">
+        <img src="./assets/steam-now-playing.png" width="340" alt="Steam now playing" />
+      </a>
+      <br /><a href="https://steamcommunity.com/profiles/76561198355636398">Steam profile</a>
     </td>
   </tr>
 </table>
@@ -147,29 +177,31 @@ The same live HUD as the [Gaming page](https://basitzaheer.de/gaming) — match 
 
 <table>
   <tr>
-    <td align="center" width="340">
+    <td align="center" width="50%" valign="top">
       <a href="https://www.dotabuff.com/players/395370670">
         <img src="https://www.basitzaheer.de/api/opendota-widget.svg" width="340" alt="Recent Dota 2 matches" />
       </a>
+      <br /><a href="https://www.dotabuff.com/players/395370670">Dota match history</a>
     </td>
-    <td width="16"></td>
-    <td align="center" width="340">
+        <td align="center" width="50%" valign="top">
       <a href="https://myanimelist.net/animelist/MeyraMax">
         <img src="https://www.basitzaheer.de/api/mal-widget.svg" width="340" alt="Currently watching" />
       </a>
+      <br /><a href="https://myanimelist.net/animelist/MeyraMax">Anime watchlist</a>
     </td>
   </tr>
   <tr>
-    <td align="center" width="340">
+    <td align="center" width="50%" valign="top">
       <a href="https://leetcode.com/u/basit3000/">
         <img src="https://www.basitzaheer.de/api/leetcode-widget.svg" width="340" alt="LeetCode stats" />
       </a>
+      <br /><a href="https://leetcode.com/u/basit3000/">LeetCode profile</a>
     </td>
-    <td width="16"></td>
-    <td align="center" width="340">
+        <td align="center" width="50%" valign="top">
       <a href="https://www.twitch.tv/meyramax">
         <img src="https://www.basitzaheer.de/api/twitch-widget.svg" width="340" alt="Twitch status" />
       </a>
+      <br /><a href="https://www.twitch.tv/meyramax">Twitch channel</a>
     </td>
   </tr>
 </table>
@@ -205,6 +237,17 @@ The same live HUD as the [Gaming page](https://basitzaheer.de/gaming) — match 
 
 ## Get in touch
 
+Have a backend, automation, or integration problem in mind? Let's talk.
+
+<p align="center">
+  <a href="https://basitzaheer.de"><img src="./assets/buttons/portfolio.svg" width="176" height="44" alt="View my portfolio" /></a>
+  <a href="mailto:basitzaheer02@gmail.com"><img src="./assets/buttons/email.svg" width="176" height="44" alt="Email Basit" /></a>
+  <a href="https://www.linkedin.com/in/muhammad-basit-zaheer/"><img src="./assets/buttons/linkedin.svg" width="176" height="44" alt="Connect with Basit on LinkedIn" /></a>
+</p>
+
 - **Site:** [basitzaheer.de](https://basitzaheer.de)
 - **Email:** [basitzaheer02@gmail.com](mailto:basitzaheer02@gmail.com)
 - **LinkedIn:** [muhammad-basit-zaheer](https://www.linkedin.com/in/muhammad-basit-zaheer/)
+
+
+[Back to top](#hey-im-basit)
