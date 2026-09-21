@@ -128,9 +128,9 @@ Also shipping: [live portfolio](https://basitzaheer.de) · [job-scout](https://g
 Latest pushes to my public projects; dates are in UTC.
 
 <!-- RECENT-PROJECTS:START -->
+- **[Diet\-Analysis](https://github.com/basit3000/Diet-Analysis)** · Python · Last pushed 2026-09-21
 - **[job\-scout](https://github.com/basit3000/job-scout)** · JavaScript · Last pushed 2026-09-13
 - **[Translation\-service](https://github.com/basit3000/Translation-service)** · HTML · Last pushed 2026-09-08
-- **[trainapplication](https://github.com/basit3000/trainapplication)** · Python · Last pushed 2026-09-08
 <!-- RECENT-PROJECTS:END -->
 
 ---
