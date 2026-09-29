@@ -4,19 +4,15 @@
 
 # Hey, I'm Basit
 
-Backend developer, mostly Python. I build APIs, automation, and small tools — especially when something I use daily has a gap worth fixing.
+I like to code things like I build APIs, automation, and small tools especially when something I use daily has a gap worth fixing or a custom requirements I have is not available.
 
-My [portfolio](https://basitzaheer.de) brings it all together: projects, live integrations, and a little Dota-inspired personality.
+My [portfolio](https://basitzaheer.de) brings it all together: projects, live integrations, and a little Dota-inspired personality. :)
 
 <p align="center">
   <a href="https://basitzaheer.de"><img src="./assets/buttons/portfolio.svg" width="176" height="44" alt="View my portfolio" /></a>
   <a href="mailto:basitzaheer02@gmail.com"><img src="./assets/buttons/email.svg" width="176" height="44" alt="Email Basit" /></a>
   <a href="https://www.linkedin.com/in/muhammad-basit-zaheer/"><img src="./assets/buttons/linkedin.svg" width="176" height="44" alt="Connect with Basit on LinkedIn" /></a>
 </p>
-
-<sub>Open to backend, automation &amp; integration projects</sub>
-
-[Projects](#side-quests) · [Recent updates](#recently-updated) · [Stack](#stack) · [Live dashboard](#off-the-clock) · [Contact](#get-in-touch)
 
 <br/>
 
@@ -43,22 +39,20 @@ My [portfolio](https://basitzaheer.de) brings it all together: projects, live in
 
 ---
 
-## What I build
+## Some of the stuff I built
 
 **Automation & integrations**  
-Scripts and pipelines that connect services — deployment setup, dynamic IP updates, pulling data from one API and pushing it somewhere useful.
+Scripts and pipelines that connect services like deployment setup, dynamic IP updates, pulling data from one API and pushing it somewhere useful.
 
 **Personal productivity tools**  
-Trackers and small web apps for the boring problems that deserve a proper backend: diet logging, job applications, ticket booking, that kind of thing.
+Trackers and small web apps for the boring problems that deserve a proper backend: diet logging, job applications, ticket booking, etc.
 
 **Media & consumption tooling**  
-Better shuffle logic, syncing watchlists to Notion, tracking things I actually care about. Anime lists, films, music — if there's an API and the UX annoys me, I'll probably build something.
+Better shuffle logic, syncing watchlists to Notion, tracking things I actually care about. Anime lists, films, music.
 
 ---
 
 ## Side quests
-
-Personal repos — the kind you start because the official app or workflow wasn't good enough.
 
 <div align="center">
 
@@ -121,17 +115,9 @@ Also shipping: [live portfolio](https://basitzaheer.de) · [job-scout](https://g
 
 `Python` · `Django` · `FastAPI` · `Flask` · `React` · `Vite` · `Docker` · `REST APIs` · `Google Sheets API` · `Notion API` · `Kotlin` · `Shell` · `Vercel` · `ArgoCD`
 
----
+### AI tools
 
-## Recently updated
-
-Latest pushes to my public projects; dates are in UTC.
-
-<!-- RECENT-PROJECTS:START -->
-- **[job\-scout](https://github.com/basit3000/job-scout)** · JavaScript · Last pushed 2026-09-29
-- **[Diet\-Analysis](https://github.com/basit3000/Diet-Analysis)** · Python · Last pushed 2026-09-21
-- **[Translation\-service](https://github.com/basit3000/Translation-service)** · HTML · Last pushed 2026-09-08
-<!-- RECENT-PROJECTS:END -->
+`Claude Code`, `Cursor`, `Codex`, `Antigravity`, `goose`, `Hermes`, `Ollama`
 
 ---
 
