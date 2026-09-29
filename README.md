@@ -1,4 +1,4 @@
-<div align="center">
+﻿<div align="center">
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=58A6FF&center=true&width=480&lines=Backend+dev+%7C+Python+%7C+Django;If+it%27s+repetitive%2C+I%27ll+script+it;Building+tools+for+things+I+actually+use)](https://github.com/DenverCoder1/readme-typing-svg)
 
@@ -244,10 +244,6 @@ Have a backend, automation, or integration problem in mind? Let's talk.
   <a href="mailto:basitzaheer02@gmail.com"><img src="./assets/buttons/email.svg" width="176" height="44" alt="Email Basit" /></a>
   <a href="https://www.linkedin.com/in/muhammad-basit-zaheer/"><img src="./assets/buttons/linkedin.svg" width="176" height="44" alt="Connect with Basit on LinkedIn" /></a>
 </p>
-
-- **Site:** [basitzaheer.de](https://basitzaheer.de)
-- **Email:** [basitzaheer02@gmail.com](mailto:basitzaheer02@gmail.com)
-- **LinkedIn:** [muhammad-basit-zaheer](https://www.linkedin.com/in/muhammad-basit-zaheer/)
 
 
 [Back to top](#hey-im-basit)
