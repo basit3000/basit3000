@@ -3,13 +3,11 @@ name: Profile Checks
 on:
   pull_request:
     paths:
-      - "scripts/update_recent_projects.py"
       - "scripts/test_recent_projects.py"
       - ".github/workflows/profile-checks.yml"
   push:
     branches: [main]
     paths:
-      - "scripts/update_recent_projects.py"
       - "scripts/test_recent_projects.py"
       - ".github/workflows/profile-checks.yml"
 
